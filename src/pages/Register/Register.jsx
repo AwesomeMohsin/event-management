@@ -1,10 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
+import toast, { Toaster } from "react-hot-toast";
 
 const Register = () => {
 
-    const {createUser } = useContext(AuthContext)
+    const { createUser, googleLogin } = useContext(AuthContext)
+    
+    const navigate = useNavigate()
+
 
     const handleRegister = e => {
         e.preventDefault();
@@ -17,12 +21,27 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success('Account Created Successfully, Please Login')
+                navigate('/login')
                 
             })
             .catch(error => {
                 console.error(error)
             })
         
+    }
+
+    // login with google
+    const handleGoogleLogin = () => {
+        googleLogin()
+            .then(result => {
+                console.log(result.user);
+                toast.success('Logged in Successfully')
+                navigate('/')
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
 
@@ -68,22 +87,31 @@ const Register = () => {
 
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Register</button>
+                            <button className="btn btn-outline">Register</button>
                         </div>
-                        <p className="pt-6">Already have an account? <Link
+                        <p className="pt-2 mx-auto">Already have an account? <Link
                             to='/login'
                             className="text-blue-500 font-semibold"
                         >Login</Link> </p>
 
-                        <hr />
-                        <div>
-                            <h2>Sign in</h2>
-                        </div>
-
                     </form>
+
+                    <hr className="w-2/3 mx-auto" />
+                    <p className="mx-auto">Or</p>
+                    <hr className="w-2/3 mx-auto" />
+
+
+                    <div className="mx-auto p-6">
+                        <button onClick={handleGoogleLogin} className="flex btn btn-outline">
+                            <img className="h-5 pr-1" src="/icons/google.png" alt="" />
+                            Continue with Google
+                        </button>
+                    </div>
+
                 </div>
 
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };

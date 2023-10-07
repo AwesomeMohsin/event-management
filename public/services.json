@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Wedding",
+      "picture": "https://i.ibb.co/hWC6y9W/wedding.jpg",
+      "description": "A beautiful celebration of love and commitment, a wedding marks the beginning of a new life journey for the couple. It's a day filled with joy, love, and cherished moments.",
+      "price": "$2,000"
+    },
+    {
+      "id": 2,
+      "title": "Birthday Party",
+      "picture": "https://i.ibb.co/z52RNGP/birthday.jpg",
+      "description": "Birthday parties are a time to celebrate another year of life. Whether it's a child's playful celebration or an adult's milestone, birthdays are all about fun, cakes, and good company.",
+      "price": "$1500"
+    },
+    {
+      "id": 3,
+      "title": "Anniversary",
+      "picture": "https://i.ibb.co/3BS7dJ0/anniversary.jpg",
+      "description": "Anniversaries are a special occasion to commemorate years of togetherness. Whether it's a couple's first anniversary or a golden one, it's a time for love and reflection.",
+      "price": "$1,000"
+    },
+    {
+      "id": 4,
+      "title": "Engagement Party",
+      "picture": "https://i.ibb.co/C6kc7sV/engagement.jpg",
+      "description": "An engagement party marks the beginning of a couple's journey to marriage. It's a time to celebrate their commitment and share their joy with friends and family.",
+      "price": "$1800"
+    },
+    {
+      "id": 5,
+      "title": "Retirement Party",
+      "picture": "https://i.ibb.co/kHRVDwc/retirement.jpg",
+      "description": "Retirement parties honor the hard work and dedication of someone who is embarking on a new chapter of life. It's a time to relax, enjoy, and look forward to the future.",
+      "price": "$1,200"
+    },
+    {
+      "id": 6,
+      "title": "Baby Shower",
+      "picture": "https://i.ibb.co/XFxGXXF/baby-shower.jpg",
+      "description": "Baby showers are a joyful occasion to celebrate the upcoming arrival of a new family member. They are filled with gifts, games, and excitement for the parents-to-be.",
+      "price": "$1300"
+    }
+  ]

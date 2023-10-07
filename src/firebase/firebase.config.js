@@ -2,17 +2,17 @@
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
 import { getAuth } from "firebase/auth";
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCK6DNDwg0Q65vhoZeK6cxk6U7E2-dMt1s",
-  authDomain: "user-email-password-auth-cbbe6.firebaseapp.com",
-  projectId: "user-email-password-auth-cbbe6",
-  storageBucket: "user-email-password-auth-cbbe6.appspot.com",
-  messagingSenderId: "535983340732",
-  appId: "1:535983340732:web:c0b48d87a7271b53ede4b9"
+  apiKey: "AIzaSyAHsyDRStUExFoUPm8gdfXU3gOSjWn0YVA",
+  authDomain: "event-management-9515e.firebaseapp.com",
+  projectId: "event-management-9515e",
+  storageBucket: "event-management-9515e.appspot.com",
+  messagingSenderId: "346188021992",
+  appId: "1:346188021992:web:ebe8623d7fbe8fdfc8c95d"
 };
 
 // Initialize Firebase

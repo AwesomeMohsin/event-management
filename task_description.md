@@ -10,7 +10,7 @@ Your website has to be related to event management. Here, we have given you a li
 
   - Conferences and Seminars,Trade Shows and Expos,Team Building Workshops,Product Launches,Corporate Meetings, Award Ceremonies, etc.
 
-- `Social Events` :birthday:
+- `Social Events` :birthday: done
 
   - Weddings, Birthday Parties, Anniversaries,Engagement Parties, Retirement Parties, Baby shower, etc.
 
@@ -38,7 +38,7 @@ Your website has to be related to event management. Here, we have given you a li
 
 1.  Make sure your design and website idea is unique. First, finalize your idea (what type of website you want to build). Then google the site design or visit `themeforest` to get your website idea. [You can visit this blog to collect free resources for your website](https://bootcamp.uxdesign.cc/free-images-and-resources-collection-for-website-c77f2fc46ce5). However, your website :x: `can not be related to your previous assignments or any demo project displayed in the course or in our conceptual sessions` :x:.
 
-2.  Home page will have a navbar, banner/slider, services, and footer.Implement `active routes` on NavBar.
+2.  Home page will have a navbar, banner/slider, services, and footer.Implement `active routes` on NavBar. done
 
 3.  Add `two extra sections` in the home page in addition to the 4 sections mentioned above.
 
