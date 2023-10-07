@@ -6,7 +6,7 @@ const Banner = () => {
 
             <div className="hero-overlay bg-opacity-20"></div>
             <div className="hero-content text-center text-black mx-auto">
-                <div className="w-11/12 md:w-3/4">
+                <div className="w-11/12 md:w-3/4 ">
                     <h1 className="mb-5 
                         text-4xl md:text-5xl lg:text-7xl font-fontTitle font-bold ">Crafting Moments, Creating Memories</h1>
                     <p className="mb-5">Elevate your celebrations with Awesome Event Management. From weddings to birthdays, we create social events that is unforgettable moments and last a lifetime.<br /><span className="font-fontTitle

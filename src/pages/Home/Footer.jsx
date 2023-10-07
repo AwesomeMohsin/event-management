@@ -3,16 +3,15 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="bg-neutral ">
-            <footer className="footer items-center p-4 text-neutral-content md:container mx-auto">
-                <aside className="items-center mx-auto md:mx-0 grid-flow-col md:justify-self-start">
-                    <img src="/logo.ico" alt="" />
-                    <p>Copyright © 2023 - All right reserved</p>
-                </aside>
-
-
-                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end mx-auto md:mx-0">
-
+        <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+            <nav className="grid grid-flow-col gap-4">
+                <a className="link link-hover">About us</a>
+                <a className="link link-hover">Contact</a>
+                <a className="link link-hover">Jobs</a>
+                <a className="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <div className="grid grid-flow-col gap-4">
                     <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <button className="text-3xl"
                         ><FaFacebook></FaFacebook></button>
@@ -27,11 +26,12 @@ const Footer = () => {
                         <button className="text-3xl"
                         ><FaYoutube></FaYoutube></button>
                     </a>
-
-
-                </nav>
-            </footer>
-        </div>
+                </div>
+            </nav>
+            <aside>
+                <p>Copyright © 2023 - All right reserved by Awesome Event Management</p>
+            </aside>
+        </footer>
 
     );
 };

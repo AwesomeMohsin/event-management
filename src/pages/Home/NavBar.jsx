@@ -35,7 +35,8 @@ const NavBar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Awesome Events</Link>
+                
+                <Link to='/' className="btn btn-ghost normal-case text-xl px-0"><img className="h-10" src="/logo.png" alt="" />Awesome Event</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -61,7 +62,7 @@ const NavBar = () => {
 
                         :
                         
-                        <div className="navbar-end flex flex-row gap-2 items-center">
+                        <div className="md:navbar-end flex flex-row gap-2 items-center">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
                                     <img src="/icons/user.png" />
