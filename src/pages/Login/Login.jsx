@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
@@ -10,7 +10,6 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location);
 
     const handleLogin = e => {
         e.preventDefault();
@@ -23,10 +22,17 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success('Logged in Successfully')
-                navigate( location?.state ? location.state : '/' )
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                console.log(error);
+                console.log(error.message);
+                if (error.message === 'Firebase: Error (auth/invalid-login-credentials).')
+                {
+                    toast.error('Incorrect email or password', {
+                        duration: 5000,
+                    });
+                }
+
             })
 
     }
@@ -37,7 +43,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success('Logged in Successfully')
-                navigate( location?.state ? location.state : '/' )
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error);

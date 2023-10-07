@@ -5,13 +5,13 @@ const Footer = () => {
     return (
         <div className="bg-neutral ">
             <footer className="footer items-center p-4 text-neutral-content md:container mx-auto">
-                <aside className="items-center mx-auto grid-flow-col">
+                <aside className="items-center mx-auto md:mx-0 grid-flow-col md:justify-self-start">
                     <img src="/logo.ico" alt="" />
                     <p>Copyright © 2023 - All right reserved</p>
                 </aside>
 
 
-                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end mx-auto">
+                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end mx-auto md:mx-0">
 
                     <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <button className="text-3xl"

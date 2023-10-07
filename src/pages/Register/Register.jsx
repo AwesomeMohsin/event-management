@@ -1,12 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import toast, { Toaster } from "react-hot-toast";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
 
     const { createUser, googleLogin } = useContext(AuthContext)
-    
+
     const navigate = useNavigate()
 
 
@@ -17,18 +18,53 @@ const Register = () => {
         const password = e.target.password.value;
         console.log(name, email, password);
 
+        // password validation
+        if (password.length < 6) {
+            toast.error('Password should be at least 6 characters', {
+                duration: 5000,
+            });
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            toast.error('Password must contain at least 1 UPPERCASE character', {
+                duration: 5000,
+            });
+            return;
+        }
+        else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+            toast.error('Password must contain at least 1 special character', {
+                duration: 5000,
+            });
+            return;
+        }
+
         // create user
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
-                toast.success('Account Created Successfully, Please Login')
+                updateProfile(result.user, {
+                    displayName: name,
+                })
+                toast.success('Registration success, Please Login')
                 navigate('/login')
-                
+
             })
             .catch(error => {
-                console.error(error)
+                console.error(error.message);
+                // if (error.message === 'Firebase: Password should be at least 6 characters (auth/weak-password).')
+                // {
+                //     toast.error('Password should be at least 6 characters', {
+                //         duration: 5000,
+                //     });
+                // }
+                if (error.message === 'Firebase: Error (auth/email-already-in-use).')
+                {
+                    toast.error('Already registered with this email', {
+                        duration: 5000,
+                    });
+                }
             })
-        
+
     }
 
     // login with google
