@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import ServiceItemDetails from "../pages/Services/ServiceItemDetails";
 import Contact from "../pages/Contact/Contact";
 import LoginRegisterRoute from "./LoginRegisterRoute";
+import Gallery from "../pages/Gallery/Gallery";
 
 
 
@@ -43,8 +44,12 @@ const router = createBrowserRouter([
                 loader: () => fetch('/services.json')
             },
             {
+                path: '/gallery',
+                element:<PrivateRoute><Gallery></Gallery></PrivateRoute>
+            },
+            {
                 path: '/contact',
-                element: <PrivateRoute><Contact></Contact></PrivateRoute>
+                element: <Contact></Contact>
             },
             {
                 path: '/profile',

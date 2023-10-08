@@ -1,32 +1,38 @@
-[
+ [
     {
       "id": 1,
+      "eventName": "Josh's Weddings",
       "name": "Sarah Anderson",
-      "description": "I couldn't have asked for a better team to plan my wedding. They ensured every detail was perfect, from the venue to the decor. Thank you for making our day truly magical!"
+      "description": "I couldn't have asked for a better team to plan my wedding at Josh's Weddings. They ensured every detail was perfect, from the venue to the decor."
     },
     {
       "id": 2,
+      "eventName": "Michael's Birthday Parties",
       "name": "Michael Johnson",
-      "description": "From corporate seminars to personal celebrations, this event management team has always exceeded my expectations. Their professionalism and creativity shine through in every event."
+      "description": "From wedding to birthday party, this event management team has always exceeded my expectations."
     },
     {
       "id": 3,
+      "eventName": "Emily's Anniversaries",
       "name": "Emily Turner",
-      "description": "I was stressed about organizing my son's birthday party, but your team took care of everything flawlessly. The kids had a blast, and I got to enjoy the day!"
+      "description": "I was stressed about organizing our anniversaries party, but your team took care of everything flawlessly."
     },
     {
       "id": 4,
+      "eventName": "David's Engagement Parties",
       "name": "David Roberts",
-      "description": "The attention to detail and the personalized touch in every event is what sets this company apart. They made our anniversary celebration a truly memorable experience."
+      "description": "The attention to detail and the personalized touch in every event is what sets this company apart."
     },
     {
       "id": 5,
+      "eventName": "Mike's Retirement Parties",
       "name": "Jessica Mitchell",
-      "description": "Our charity gala was a huge success, thanks to the meticulous planning and execution by this event management team. They helped us raise more funds than ever before."
+      "description": "Our Retirement party was a huge success, thanks to the meticulous planning and execution by this event management team."
     },
     {
       "id": 6,
+      "eventName": "Emily's Baby shower",
       "name": "Alex Bennett",
-      "description": "The team behind this website has been our go-to for all our corporate events. Their professionalism and creative ideas have consistently wowed our clients and partners."
+      "description": "Their professionalism and creative ideas have consistently wowed our family members and partners, including Emily's Baby shower."
     }
   ]

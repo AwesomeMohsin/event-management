@@ -21,12 +21,13 @@ const NavBar = () => {
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/services'>Services</Link></li>
-        <li><Link to='/contact'>Contact us</Link></li>
+        <li><Link to='/gallery'>Gallery</Link></li>
         <li><Link to='/profile'>Profile</Link></li>
+        <li><Link to='/contact'>Contact us</Link></li>
     </>
 
     return (
-        <div className="navbar  flex flex-col-reverse md:flex-row md:container mx-auto">
+        <div className="navbar flex flex-col-reverse md:flex-row md:container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost px-0 lg:hidden">
