@@ -12,7 +12,9 @@ const Banner = () => {
                     <p className="mb-5 btn btn-outline  border-0 normal-case text-base ">Elevate your celebrations with Awesome Event Management. From weddings to birthdays, we create social events that is unforgettable moments and last a lifetime.
                     </p>
                     <p className="font-fontTitle text-xl md:text-3xl pt-6">Let's plan your perfect event together!</p>
-                    <button className="btn btn-outline ">View our Services</button>
+                    <div>
+                    <a href="#services-container"><button className="btn btn-outline ">View our Services</button></a>
+                    </div>
                 </div>
             </div>
 

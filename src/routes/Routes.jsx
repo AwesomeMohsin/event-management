@@ -9,6 +9,7 @@ import Profile from "../pages/UserPages/Profile";
 import PrivateRoute from "./PrivateRoute";
 import ServiceItemDetails from "../pages/Services/ServiceItemDetails";
 import Contact from "../pages/Contact/Contact";
+import LoginRegisterRoute from "./LoginRegisterRoute";
 
 
 
@@ -24,11 +25,13 @@ const router = createBrowserRouter([
             },
             {
                 path: '/login',
-                element: <Login></Login>
+                element: <LoginRegisterRoute><Login></Login></LoginRegisterRoute>
+
             },
             {
                 path: '/register',
-                element: <Register></Register>
+                element: <LoginRegisterRoute><Register></Register></LoginRegisterRoute>
+
             },
             {
                 path: '/services',

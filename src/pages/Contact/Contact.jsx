@@ -4,9 +4,9 @@ import { MdCall, MdEmail } from "react-icons/md";
 
 const Contact = () => {
     return (
-        <div className="md:container flex flex-col md:flex-row justify-around gap-6 mx-auto md:py-20 shadow-xl rounded-xl mt-10 mb-10">
+        <div className="md:container flex flex-col md:flex-row justify-around gap-6 mx-auto md:py-20  rounded-xl mt-10 mb-10">
             {/* Directions */}
-            <div className="flex-1">
+            <div className="flex-1 shadow-xl rounded-lg">
                 <h2 className="font-fontTitle text-center text-5xl pb-10 pt-10">Get Direction</h2>
 
                 <div className="w-10/12 mx-auto">
@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
 
             {/* Get in touch */}
-            <div className="flex-1">
+            <div className="flex-1 shadow-xl rounded-lg">
             <h2 className="font-fontTitle text-center text-5xl pb-10 pt-10">Get in touch</h2>
 
                 <form className="w-10/12 mx-auto">
