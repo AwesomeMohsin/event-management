@@ -1,4 +1,4 @@
-# Donation Campaign
+# Awesome Event Management
 
 ## Project Features
 
@@ -15,4 +15,4 @@
 - Contact Us with Ease: In the Contact Us section, users can find our office location on a map and get in touch with us using a simple message form.
 
 
-### Live Link: https://awesome-campaign-donation.surge.sh/
+### Live Links: https://awesome-event-management.surge.sh/
