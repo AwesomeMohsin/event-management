@@ -1,8 +1,18 @@
-# React + Vite
+# Donation Campaign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Features
 
-Currently, two official plugins are available:
+- Easy Sign-In: Users can sign in effortlessly using their email and password, or they can choose the convenience of their Google Account.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Explore Home Page: On the home page, users can explore exciting event packages, read reviews from others, and get to know our expert team members.
+
+- Diverse Services: Find a variety of event packages and services at reasonable prices on the Services Page.
+
+- Detailed Package Info: Click the "View Details" button to learn more about a package. Just remember to log in to access this feature.
+
+- Personal Profile: In the Profile section, users can view their own details once they've logged in.
+
+- Contact Us with Ease: In the Contact Us section, users can find our office location on a map and get in touch with us using a simple message form.
+
+
+### Live Link: https://awesome-campaign-donation.surge.sh/
