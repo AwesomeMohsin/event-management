@@ -12,24 +12,24 @@ const Home = () => {
         fetch('reviews.json')
             .then(res => res.json())
             .then(data => setReviews(data))
-        
+
     }, [])
 
     return (
         <div>
             <Banner></Banner>
-            
-            <div className="md:container mx-auto ">
+
+            <div className="md:container mx-auto pt-10">
                 {/* services */}
                 <div className="py-20">
-                <Services></Services>
+                    <Services></Services>
                 </div>
 
                 {/* reviews */}
-                <div >
-                    <h2 className="text-center font-fontTitle text-6xl pb-4">Reviews</h2>
+                <div className="py-20">
+                    <h2 className="text-center font-fontTitle text-4xl md:text-6xl  pb-4">Reviews</h2>
                     <hr className="w-1/3 mx-auto" />
-                    <hr className="w-1/3 mx-auto pb-16" />
+                    <hr className="w-1/3 mx-auto pb-20" />
                     {
                         reviews.map(review => <Reviews
                             review={review}
@@ -39,7 +39,7 @@ const Home = () => {
                 </div>
 
                 {/* expert */}
-                <div className="py-20">
+                <div className="">
                     <Expert></Expert>
                 </div>
 

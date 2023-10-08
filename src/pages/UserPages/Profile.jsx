@@ -1,7 +1,7 @@
 
 const Profile = () => {
     return (
-        <div>
+        <div className="md:container mx-auto">
             <h2>This is private profile page of user</h2>
         </div>
     );
