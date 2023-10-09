@@ -14,6 +14,7 @@ const Register = () => {
     const handleRegister = e => {
         e.preventDefault();
         const name = e.target.name.value;
+        const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, email, password);
@@ -44,6 +45,7 @@ const Register = () => {
                 console.log(result.user);
                 updateProfile(result.user, {
                     displayName: name,
+                    photoURL: photo,
                 })
                 toast.success('Registration success, Please Login')
                 navigate('/login')
@@ -102,6 +104,15 @@ const Register = () => {
                                 type="text"
                                 name="name"
                                 placeholder="Your name" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Photo URL</span>
+                            </label>
+                            <input
+                                type="text"
+                                name="photo"
+                                placeholder="Photo URL" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import toast from "react-hot-toast";
 
@@ -19,11 +19,11 @@ const NavBar = () => {
 
 
     const navItems = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/services'>Services</Link></li>
-        <li><Link to='/gallery'>Gallery</Link></li>
-        <li><Link to='/profile'>Profile</Link></li>
-        <li><Link to='/contact'>Contact us</Link></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/services'>Services</NavLink></li>
+        <li><NavLink to='/gallery'>Gallery</NavLink></li>
+        <li><NavLink to='/profile'>Profile</NavLink></li>
+        <li><NavLink to='/contact'>Contact us</NavLink></li>
     </>
 
     return (
@@ -53,7 +53,7 @@ const NavBar = () => {
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
                                     {
-                                        user.photoURL !== null ? <img src={user.photoURL} /> : <img src="/icons/user.png" />
+                                        user.photoURL !== null ? <Link to='/profile'><img src={user.photoURL} /></Link> : <Link to='/profile'><img src="/icons/user.png" /></Link>
                                     }
                                 </div>
                             </label>

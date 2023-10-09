@@ -5,12 +5,14 @@ import toast, { Toaster } from "react-hot-toast";
 
 
 const Login = () => {
-
+    
+    const location = useLocation();
     const { loginUser, googleLogin } = useContext(AuthContext);
+    const from = location.state?.from?.pathname || "/";
 
     const navigate = useNavigate();
-    const location = useLocation();
-
+    console.log(location);
+    
     const handleLogin = e => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -22,7 +24,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success('Logged in Successfully')
-                navigate(location?.state ? location.state : '/')
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.log(error.message);
@@ -43,7 +45,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success('Logged in Successfully')
-                navigate(location?.state ? location.state : '/')
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.log(error);

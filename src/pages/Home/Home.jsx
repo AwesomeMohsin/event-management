@@ -6,12 +6,15 @@ import Expert from "./Expert";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 // ..
 AOS.init();
 
 const Home = () => {
 
     const [reviews, setReviews] = useState([])
+    console.log(reviews);
 
     useEffect(() => {
         fetch('reviews.json')
@@ -57,24 +60,11 @@ const Home = () => {
                     <h2 className="text-center font-fontTitle text-4xl md:text-6xl  pb-4">Reviews</h2>
                     <hr className="w-1/3 mx-auto" />
                     <hr className="w-1/3 mx-auto pb-20" />
-                    {/* <Carousel
+                    <Carousel
                         responsive={responsive}
-                        containerClass="-mx-[10px]"
-                        itemClass="px-[10px]"
                         infinite={true}
                         autoPlay={true}
                     >
-                        {
-                            reviews.map(review => <Reviews
-                                key={review.id}
-                                eventName={review.eventName}
-                                description={review.description}
-                                name={review.name}
-                            ></Reviews>)
-                        }
-                    </Carousel> */}
-
-
                     {
                         reviews.map(review => <Reviews
                             review={review}
@@ -84,17 +74,21 @@ const Home = () => {
                             name={review.name}
                         ></Reviews>)
                     }
-                </div>
+                    </Carousel>;
 
-                {/* expert */}
-                <div className=""
-                    data-aos="fade-up" data-aos-delay="500"
-                >
-                    <Expert></Expert>
                 </div>
+                
+                <div></div>
 
+            {/* expert */}
+            <div className=""
+                data-aos="fade-up" data-aos-delay="500"
+            >
+                <Expert></Expert>
             </div>
+
         </div>
+        </div >
 
     );
 };

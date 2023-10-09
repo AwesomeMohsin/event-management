@@ -15,4 +15,4 @@
 - Contact Us with Ease: In the Contact Us section, users can find our office location on a map and get in touch with us using a simple message form.
 
 
-### Live Links: https://awesome-event-management.surge.sh/
+### Live Links: https://event-management-9515e.web.app/ https://awesome-event-management.surge.sh/ 
