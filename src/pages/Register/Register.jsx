@@ -17,7 +17,6 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
 
         // password validation
         if (password.length < 6) {
@@ -41,13 +40,12 @@ const Register = () => {
 
         // create user
         createUser(email, password)
-            .then(result => {
-                console.log(result.user);
+            .then(() => {
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photo,
                 })
-                toast.success('Registration success, Please Login')
+                toast.success('Registration successful')
                 navigate('/login')
 
             })
@@ -72,8 +70,7 @@ const Register = () => {
     // login with google
     const handleGoogleLogin = () => {
         googleLogin()
-            .then(result => {
-                console.log(result.user);
+            .then(() => {
                 toast.success('Logged in Successfully')
                 navigate('/')
             })

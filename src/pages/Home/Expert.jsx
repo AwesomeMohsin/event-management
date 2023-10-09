@@ -4,9 +4,9 @@ const Expert = () => {
         <div className="pb-20">
             <h2 className="text-center font-fontTitle text-4xl md:text-6xl pb-4">Meet our Expert</h2>
             <hr className="w-1/3 mx-auto" />
-            <hr className="w-1/3 mx-auto pb-20" />
+            <hr className="w-1/3 mx-auto pb-10" />
 
-            <div className="hero">
+            <div className="hero  shadow-xl rounded-xl">
                 <div className="hero-content flex-col lg:flex-row">
 
                     <img src="/images/expert.png" className="max-w-sm rounded-lg " />

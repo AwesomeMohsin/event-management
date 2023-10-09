@@ -1,3 +1,4 @@
+import toast, { Toaster } from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const ServiceItemDetails = () => {
@@ -8,6 +9,9 @@ const ServiceItemDetails = () => {
 
     const service = services.find(service => service.id === idInt);
 
+    const handleBookNow = () => {
+        toast.success('Event Booked Successfully')
+    }
 
     return (
         <div className="py-16 w-11/12 h-auto mx-auto ">
@@ -19,11 +23,11 @@ const ServiceItemDetails = () => {
                 <h2 className="text-4xl font-bold pt-12 text-[#0B0B0B]">{service.title}</h2>
                 <p className="py-6 font-normal leading-7 text-gray-600">{service.description}</p>
                 <h4 className="text-2xl font-semibold">Price: Only {service.price} </h4>
-                <button className="mt-4 btn btn-outline">Book Now</button>
+                <button onClick={handleBookNow} className="mt-4 btn btn-outline">Book Now</button>
             </div>
 
 
-
+            <Toaster></Toaster>
         </div>
     );
 };

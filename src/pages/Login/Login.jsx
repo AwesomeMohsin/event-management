@@ -11,18 +11,15 @@ const Login = () => {
     const from = location.state?.from?.pathname || "/";
 
     const navigate = useNavigate();
-    console.log(location);
     
     const handleLogin = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
 
         // login user
         loginUser(email, password)
-            .then(result => {
-                console.log(result.user);
+            .then(() => {
                 toast.success('Logged in Successfully')
                 navigate(from, { replace: true });
             })
@@ -42,8 +39,7 @@ const Login = () => {
     // login with google
     const handleGoogleLogin = () => {
         googleLogin()
-            .then(result => {
-                console.log(result.user);
+            .then(() => {
                 toast.success('Logged in Successfully')
                 navigate(from, { replace: true });
             })

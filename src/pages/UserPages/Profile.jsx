@@ -4,7 +4,6 @@ import { AuthContext } from "../../providers/AuthProviders";
 const Profile = () => {
 
     const { user } = useContext(AuthContext);
-    console.log(user);
 
     return (
         <div className="md:container mx-auto py-20">

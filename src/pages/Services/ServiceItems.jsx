@@ -9,7 +9,9 @@ const ServiceItems = ({ service }) => {
             <figure><img src={picture} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
-                <p>{description}</p>
+                {
+                    description.length > 80 && <p>{description.slice(0, 66)} <Link className="text-blue-400 " to={`/services/${id}`}>Read more . . .</Link> </p>
+               }
                 <div className="card-actions justify-between items-center">
                     <h3 className="font-semibold text-lg">Price: {price}</h3>
                     <Link to={`/services/${id}`}>

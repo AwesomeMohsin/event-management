@@ -1,8 +1,27 @@
 import { Map, Marker } from "pigeon-maps";
+import toast, { Toaster } from "react-hot-toast";
 import { MdCall, MdEmail } from "react-icons/md";
 
 
 const Contact = () => {
+
+    let count = 0;
+const nums = [0, 1, 2, 3];
+
+nums.forEach((num) => {
+  if (num) count += 1;
+});
+
+console.log(count);
+
+
+    const handleContactSubmit = e => {
+        e.preventDefault();
+        toast.success('Submitted, we will contact you soon')
+        
+    }
+
+
     return (
         <div className="md:container flex flex-col md:flex-row justify-around gap-6 mx-auto md:py-20  rounded-xl mt-10 mb-10">
             {/* Directions */}
@@ -26,7 +45,7 @@ const Contact = () => {
             <div className="flex-1 shadow-xl rounded-lg">
             <h2 className="font-fontTitle text-center text-5xl pb-10 pt-10">Get in touch</h2>
 
-                <form className="w-10/12 mx-auto">
+                <form onSubmit={handleContactSubmit} className="w-10/12 mx-auto">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Full Name</span>
@@ -69,6 +88,7 @@ const Contact = () => {
                 <p className="flex gap-2 items-center lg:text-xl pt-3"><MdEmail className="text-3xl"></MdEmail> awesome-event@management.com</p>
                </div>
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };

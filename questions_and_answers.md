@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: ReferenceError: greetign is not defined
 
-<i>Write your explanation here</i>
+<i>There's a mistake in the code, where you meant to use the variable name greeting but accidentally used greetign, leads to a ReferenceError because JavaScript doesn't recognize greetign as a valid variable.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: "12"
 
-<i>Write your explanation here</i>
+<i>JavaScript automatically converts the number 1 to a string and combines it with the string "2". This conversion results in the string "12".</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
-<i>Write your explanation here</i>
+<i>At first, info.favoriteFood refers to "🍕", the first item in the food array. Changing info.favoriteFood to "🍝" doesn't alter the food array. Consequently, the logged food array remains unchanged: ['🍕', '🍫', '🥑', '🍔'].</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: Hi there, undefined
 
-<i>Write your explanation here</i>
+<i>If we use the sayHi() function without giving it an argument, the name parameter becomes undefined. The function still runs, but it concatenates this undefined value with the string, giving you "Hi there, undefined".</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>Inside the forEach loop, there's an if condition that examines whether the 'num' value is considered true or false. As the initial number in the 'nums' array is 0 (a false value), the code within the if statement doesn't run. The 'count' variable only increases for the remaining three numbers in the 'nums' array, which are 1, 2, and 3. Since 'count' increases by 1 three times, its final value becomes 3.</i>
 
 </p>
 </details>

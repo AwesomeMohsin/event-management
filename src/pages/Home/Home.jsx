@@ -14,7 +14,6 @@ AOS.init();
 const Home = () => {
 
     const [reviews, setReviews] = useState([])
-    console.log(reviews);
 
     useEffect(() => {
         fetch('reviews.json')
@@ -65,29 +64,29 @@ const Home = () => {
                         infinite={true}
                         autoPlay={true}
                     >
-                    {
-                        reviews.map(review => <Reviews
-                            review={review}
-                            key={review.id}
-                            eventName={review.eventName}
-                            description={review.description}
-                            name={review.name}
-                        ></Reviews>)
-                    }
-                    </Carousel>;
+                        {
+                            reviews.map(review => <Reviews
+                                review={review}
+                                key={review.id}
+                                eventName={review.eventName}
+                                description={review.description}
+                                name={review.name}
+                            ></Reviews>)
+                        }
+                    </Carousel>
 
                 </div>
-                
-                <div></div>
 
-            {/* expert */}
-            <div className=""
-                data-aos="fade-up" data-aos-delay="500"
-            >
-                <Expert></Expert>
+
+
+                {/* expert */}
+                <div className=""
+                    data-aos="fade-up" data-aos-delay="500"
+                >
+                    <Expert></Expert>
+                </div>
+
             </div>
-
-        </div>
         </div >
 
     );
